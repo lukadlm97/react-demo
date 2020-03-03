@@ -1,0 +1,23 @@
+Osnovna podela komponenti u reactu je na stateless i statefull.
+Pod stateless podrazumevano najcesce funkcije koje vracaju 
+html koji opisuje UI.
+Pod statefull podrazumevamo klase koje nasldjuju klasu components.
+One sigurno imaju render() funkciju koja vraca html.
+==================================================================
+Funkcionalne komponente	|
+-------------------------
+Klasicne JS funkcije, i opciono mogu primati property koje oslikava
+props i vracaju html koji opisuje UI. 
+-------------------------
+Komponente klase	|
+-------------------------
+Cuvaju stanje kao privatne podatke, mogu sadrzati komplikovane UI 
+logike.
+==================================================================
+PROPS
+Komponente su pogodne jer su reuseable. Props su elementi koje 
+komponente podrzavaju i pomazu kod ostvarivanja dinamike.
+
+Kod funkcionalnih komponenti mozemo imati iskljucivo jedan html
+kojim je ukoviren celokupan sadrzaj strane. Vrednosti props-a se
+ne mogu menjati!!!
