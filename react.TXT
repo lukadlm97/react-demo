@@ -29,3 +29,14 @@ Kada treba neku komponentu u toku izvresenja da promenimo, resenje
  je stanje komponente. 
 Kada se koristi konstruktor u okviru komponente, obavezno je 
 pozivanje super() metode nadklase.
+Uvek kada je neophodna promena stanja, treba koristi setState 
+metodu. Nikada to ne treba raditi direktno!!! Razlog tome je jer
+React onda ne renduje komponente sa promenenjenim stanjima, 
+vec samo ako je pozvana metoda setState()
+Kod recimo logovanja neke vrednosti, asinhronost se moze javiti.
+Problem se resava callback funkcijama, koje omogucavaju da se 
+vrednost loguje tek nakon izvrsenja metode
+Kada pozivamo metodu setState vise puta u jednom izvrsenju,
+React sve pozive grupise u jedan poziv. Taj poziv se izvrsi,
+i promenljiva ne uzima u obzir vrednost iz prethodnog poziva.
+Resenje se nalazi u slanju prethodnog stanja kao ulazne promenljive
