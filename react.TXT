@@ -21,3 +21,11 @@ komponente podrzavaju i pomazu kod ostvarivanja dinamike.
 Kod funkcionalnih komponenti mozemo imati iskljucivo jedan html
 kojim je ukoviren celokupan sadrzaj strane. Vrednosti props-a se
 ne mogu menjati!!!
+==================================================================
+STATE
+Stanje odrzavaju promenljive definisane u body delu funkcije
+Za razliku od props-a, stanje se moze menjati
+Kada treba neku komponentu u toku izvresenja da promenimo, resenje
+ je stanje komponente. 
+Kada se koristi konstruktor u okviru komponente, obavezno je 
+pozivanje super() metode nadklase.
