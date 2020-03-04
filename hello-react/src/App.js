@@ -9,7 +9,9 @@ import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      <Welcome name='Luka' heroName='Student' />
+      <Greet name='Luka' heroName='Superman' />
+     {/* <Counter/>*/}
     {/*<Message /> */}
     {/* <Greet name='Luka' heroName='Student'>
        <p>This is children props</p>

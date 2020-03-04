@@ -40,3 +40,10 @@ Kada pozivamo metodu setState vise puta u jednom izvrsenju,
 React sve pozive grupise u jedan poziv. Taj poziv se izvrsi,
 i promenljiva ne uzima u obzir vrednost iz prethodnog poziva.
 Resenje se nalazi u slanju prethodnog stanja kao ulazne promenljive
+=================================================================
+RESTRUCTURING
+Omogucava da se odpakuju vrednosti iz nizova ili atributi iz
+objekata u neku promenljivu. Poboljsava citljivosti koda. Moguce
+je atribute procitati iz objekta primer {name,age} = props ako
+su atributi tako prosledjeni kao paramteri. Slicno se radi i sa
+state promenljivima sto se same dodele tice.
