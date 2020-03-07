@@ -47,3 +47,8 @@ objekata u neku promenljivu. Poboljsava citljivosti koda. Moguce
 je atribute procitati iz objekta primer {name,age} = props ako
 su atributi tako prosledjeni kao paramteri. Slicno se radi i sa
 state promenljivima sto se same dodele tice.
+=================================================================
+EVENT HANDLERS
+Bitna stvar da kada se menja state varijabla mora da se pomocu
+funkcije poveze i prosledi stanje. .bind(this) Drugi nacin je da se
+prosledi kao {() => nameOfFunction()}
