@@ -26,9 +26,10 @@ function NameList() {
 
     const names = ['Bruce','Clarck','Diana']
 const personList = persons.map(person => <Person key={person.id} person={person} />)
+const nameList = names.map((name,index) => <h2 key={index}>{index}.{name}</h2>)
     return (
         <div>
-                {personList}
+                {nameList}
         </div>
     )
 }
