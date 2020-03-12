@@ -102,8 +102,17 @@ getSnapshotBeforeUpdate(prevProps,prevState)-za prikaz nekih info
 iz DOM-a (user scroll caluclation)
 componentDidUpdate(prevProps,prevState,snapshot) - kada je render
 zavrsen u re-render krugu, i u njoj se pravi side-effect ako mora
-
-
+=================================================================
+PURE COMPONENTS
+Razlika izmedju regularnih i pure komponenti je sto se pure 
+komponente samo jednom renderuju na setInterval, dok se regularne
+renderuju na svaki tik. Pure component-e implementiraju should
+Update metodu, dok regularne to ne rade.
+================================================================
+Shallow comparasion
+=== - ukoliko ukazuju na istu referencu 
+== - vrednosno poredjenje
+Pure se koristi samo da bi se bustovale performanse
 
 
 
