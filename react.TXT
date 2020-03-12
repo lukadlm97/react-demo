@@ -89,6 +89,19 @@ deteGetDerivedStateFromProps()
 deteRender()
 deteDidMount()
 roditeljDidMount()
+--------
+Update() metoda se koristi kada je potrebno rerenderovanje kompon
+jer su se desile promene u props-u ili state-u
+metoda koja se poziva uvek kod rerenderovanja je getDerivedState
+FromProps(props,state). Koristi se ya setovanje state-a kod 
+promene props-a. shouldComponentUpdate(nextProps,nextState)
+ova metoda ima ulogu da odluci da li metoda treba ili ne da se 
+ponovo renderuje
+rander() - read props and state
+getSnapshotBeforeUpdate(prevProps,prevState)-za prikaz nekih info
+iz DOM-a (user scroll caluclation)
+componentDidUpdate(prevProps,prevState,snapshot) - kada je render
+zavrsen u re-render krugu, i u njoj se pravi side-effect ako mora
 
 
 
