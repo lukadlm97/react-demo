@@ -16,14 +16,15 @@ import Inline from './components/Inline';
 import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 function App() {
   return (
     <div className="App">
 
-      <Form />
 
-
+      <LifecycleA />
      {/* 
+      <Form />
       <Stylesheet primary={true} />
       <h2 className='error'>Error</h2>
       <h2 className={styles.success}>Success</h2>

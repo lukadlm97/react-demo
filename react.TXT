@@ -52,3 +52,46 @@ EVENT HANDLERS
 Bitna stvar da kada se menja state varijabla mora da se pomocu
 funkcije poveze i prosledi stanje. .bind(this) Drugi nacin je da se
 prosledi kao {() => nameOfFunction()}
+=================================================================
+LISTS
+Nema neke velike razlike u odnosu na ubicajene liste. Fore sa 
+indeksima su intuitivne i nije frka
+=================================================================
+CSS
+Ima tri nacina na koje je moguce pristupati css-u, i sva tri
+su dosta jednostavna
+=================================================================
+LIFECYCLE
+Mounting, Update-ing, Unmounting, Error su tri osnovne 
+faze kod rada sa komponentama. 
+Mounting
+--------
+U okviru ove faze se poziva konstruktor
+U okviru konstruktora je pozeljna inicijalizacija stanja,
+veyivanje event handler-a, ali NIKAKO pravljenje HTTP req
+super(props) ya ugradjeni construktor
+getDerivedStateFromProps(props,state)
+-koristi se kada imamo da 
+neka komponenta u state-u zavisi od props-a u vreme izvrsavanja.
+To zapravo znaci da jedino preko ove komponente u mozemo menjati
+stanje.
+render() - jedina obavezna metoda. cita props i state i vraca js
+U okviru nje ne treba menajti satanje ili pozivati ajax
+didMount() - metoda koja se poziva povremeno nakon sto se
+sve komponente kojima je ona roditelj izrenderuju
+Pogodna je za side-effects, tj akza komunikacijus a serverom itd.
+Sto se redosleda izvravana tice imamo
+roditeljConstructor()
+roditeljGetDerivedStateFromProps()
+roditeljRender()
+deteConstructor()
+deteGetDerivedStateFromProps()
+deteRender()
+deteDidMount()
+roditeljDidMount()
+
+
+
+
+
+
