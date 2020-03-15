@@ -24,11 +24,12 @@ import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo';
 import ParentCompRef from './components/ParentCompRef';
 import FokusInput from './components/FokusInput';
+import FRParentInput from './components/FRParentInput';
 function App() {
   return (
     <div className="App">
 
-      <FokusInput />
+     <FRParentInput />
 
      {/* 
       <ParentCompRef />
