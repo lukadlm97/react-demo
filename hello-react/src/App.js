@@ -22,15 +22,16 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo';
+import ParentCompRef from './components/ParentCompRef';
 function App() {
   return (
     <div className="App">
 
-    <RefsDemo />
-
+      <ParentCompRef />
 
      {/* 
       <ParentComp />
+      <RefsDemo />
       <Table />
       <FragmentDemo />
       <LifecycleA />
