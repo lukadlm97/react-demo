@@ -25,13 +25,15 @@ import RefsDemo from './components/RefsDemo';
 import ParentCompRef from './components/ParentCompRef';
 import FokusInput from './components/FokusInput';
 import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
 function App() {
   return (
     <div className="App">
 
-     <FRParentInput />
+      <PortalDemo></PortalDemo>
 
      {/* 
+     <FRParentInput />
       <ParentCompRef />
       <ParentComp />
       <RefsDemo />
