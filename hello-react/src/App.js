@@ -41,12 +41,12 @@ function App() {
   return (
     <div className="App">
 
-    <UserProvider value = 'Luka'>
-      <ComponentC />
-    </UserProvider>
 
      {/* 
       <CounterExp
+      <UserProvider value = 'Luka'>
+        <ComponentC />
+      </UserProvider>
         render= {(count,incrementCount)=>
         <ClickCounterTwo count={count} incrementCount={incrementCount}/>
         } />
