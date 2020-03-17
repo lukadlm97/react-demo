@@ -36,12 +36,13 @@ import User from './components/User'
 import CounterExp from './components/CounterExp'
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
 
 function App() {
   return (
     <div className="App">
 
-
+    <PostList />
      {/* 
       <CounterExp
       <UserProvider value = 'Luka'>
